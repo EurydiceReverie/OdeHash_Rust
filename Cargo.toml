@@ -1,0 +1,20 @@
+[package]
+name = "ode-hash"
+version = "0.1.0"
+edition = "2021"
+description = "OdeHash v5: Cryptographic hash based on coupled Riccati ODEs"
+
+[dependencies]
+zeroize = { version = "1", features = ["derive"] }
+clap = { version = "4", features = ["derive"] }
+
+[dev-dependencies]
+rand = "0.8"
+
+[[bin]]
+name = "ode-hash-v5"
+path = "src/main.rs"
+
+[lib]
+name = "ode_hash"
+path = "src/lib.rs"
